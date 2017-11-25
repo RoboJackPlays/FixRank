@@ -1,7 +1,7 @@
 package net.ajgaming.fixrank;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.scheduler.BukkitRunnable;
+// import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -34,13 +34,13 @@ public class Main extends JavaPlugin implements Listener {
 
 		if (!(player.hasPermission("ajgaming.rankfix"))) {
 		 getServer().dispatchCommand(getServer().getConsoleSender(), "lp user " + player.getName() + " parent add User server=vanilla");
-			 new BukkitRunnable() {
-			 public void run () {
-			 getServer().dispatchCommand(getServer().getConsoleSender(), "nm reload");
-			 }
+//			 new BukkitRunnable() {
+	//		 public void run () {
+		//	 getServer().dispatchCommand(getServer().getConsoleSender(), "nm reload");
+			// }
 			 
 			
-			 } .runTaskLater(this, 20l);
+			 //} .runTaskLater(this, 20l);
 
 		}
 	}
